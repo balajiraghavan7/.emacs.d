@@ -29,7 +29,7 @@
 ;; More useful frame title, that show either a file or a
 ;; buffer name (if the buffer isn't visiting a file)
 (setq frame-title-format
-      '("Ivars " invocation-name " @ " (:eval (if (buffer-file-name)
+      '("Balaji's " invocation-name " @ " (:eval (if (buffer-file-name)
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
@@ -54,3 +54,16 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 (provide 'setup-defaults)
+
+
+
+
+
+
+
+
+
+
+
+
+

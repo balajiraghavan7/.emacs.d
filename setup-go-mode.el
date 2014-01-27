@@ -4,6 +4,7 @@
 
 (add-to-list 'load-path (concat user-emacs-directory "packages/go-mode"))
 (require 'go-mode)
+(require 'go-eldoc)
 (require 'auto-complete-config)
 (require 'go-autocomplete)
 (global-auto-complete-mode)
@@ -13,8 +14,8 @@
                           (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)
                           (local-set-key (kbd "C-c C-i") 'go-goto-imports)
                           (smartparens-mode)
+                          (go-eldoc-setup)
                           ))
-
 
 (add-hook 'before-save-hook 'gofmt-before-save)
 
@@ -22,3 +23,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (provide 'setup-go-mode)
+
